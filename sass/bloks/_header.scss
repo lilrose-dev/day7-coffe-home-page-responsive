@@ -1,0 +1,38 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 45px 0 45px 0;
+    
+    .list__item {
+        margin-left: 33px;
+    }
+
+    .list__link {
+        text-decoration: none;
+        font-family: "Barlow";
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 15px;    
+        text-transform: uppercase;
+        color:var(--color-grey);
+
+        &:active {
+            color: var(--color-dark);
+        }
+    }
+
+}
+
+//TABLE MEDIA
+@media only screen and (max-width:768px) {
+    .header {
+        margin-top: 40px;
+        margin-bottom: 54px;
+    }
+}//End of table meadia
+
+
+//MOBILE MEDIA
+
+
