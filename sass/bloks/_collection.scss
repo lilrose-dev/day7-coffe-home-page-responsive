@@ -1,0 +1,128 @@
+.collections {
+    background-image: url(../../images/our-collection.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position:top;
+    text-align: center;
+    margin-bottom: 188px;
+}
+
+.collection {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 60px;
+    
+    &__item {
+        margin: 0;
+        margin-left: 30px;
+        
+        &--a::before {
+            content: "";
+            display: block;
+            width: 255px;
+            height: 193px;
+            background-image: url(../../images/package1.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+            margin-bottom: 71px;
+        }
+        &--b::before {
+            content: "";
+            display: block;
+            width: 255px;
+            height: 193px;
+            background-image: url(../../images/package2.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+            margin-bottom: 71px;
+        }
+        &--c::before {
+            content: "";
+            display: block;
+            width: 255px;
+            height: 193px;
+            background-image: url(../../images/package3.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+            margin-bottom: 71px;
+        }
+        &--d::before {
+            content: "";
+            display: block;
+            width: 255px;
+            height: 193px;
+            background-image: url(../../images/package4.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+            margin-bottom: 71px;
+        }
+    }
+    
+    &__heading {
+        font-family: "Fraunces";
+        font-size: 24px;
+        font-weight: 900;
+        line-height: 32px;
+        color: var(--color-dark);
+        margin-bottom: 24px;
+    }
+    
+    &__text {
+        width: 255px;
+        font-family: "Barlow";
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 26px;  
+        color: var(--color-dark);
+    }
+}
+
+//MEDIA FOR 768PX TABLET
+@media only screen and (max-width:768px) {
+    .container {
+        padding:0 24px 0 24px;
+    }
+    .collection {
+        flex-direction: column;
+        padding-top: 40px;
+        align-items: center;
+
+        
+        &__item {
+            display: flex;
+            min-width: 573px;
+            text-align: left;
+
+        }
+        
+        &__collect {
+            &::before {
+                flex-shrink: 0;
+                margin-right: 36px;
+            }
+        }
+    }
+}/* END OF MEDIA FOR 768PX TABLE*/
+@media only screen and (max-width:375px) {
+    .collection__item {
+        flex-direction: column;
+        text-align: center;
+        margin-bottom: 48px;
+
+        &::before {
+            margin-right: 0;
+            margin-bottom: 24px;
+        }
+    }
+
+    .collection__collect {
+        max-width: 282px;
+    }
+
+}
