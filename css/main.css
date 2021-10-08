@@ -408,6 +408,9 @@ p {
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
   .collection__item--a::before {
     background-image: url(../../images/package1@2x.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
   }
 }
 
@@ -442,6 +445,10 @@ p {
   .container {
     padding: 0 24px 0 24px;
   }
+  .collections {
+    background-image: url(../../images/our-collection.png);
+    background-position: top;
+  }
   .collection {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -468,6 +475,10 @@ p {
 
 /* END OF MEDIA FOR 768PX MOBILE*/
 @media only screen and (max-width: 375px) {
+  .collections {
+    background-image: url(../../images/our-collection.png);
+    background-position: top;
+  }
   .collection__item {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -596,12 +607,21 @@ p {
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
   .list__item--quality {
     background-image: url(../../images/coffee-shape@2x.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
   }
   .list__item--benifits {
     background-image: url(../../images/gift@2x.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
   }
   .list__item--shipping {
     background-image: url(../../images/lurry@2x.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
   }
 }
 

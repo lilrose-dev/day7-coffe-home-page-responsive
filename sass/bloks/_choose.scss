@@ -107,14 +107,23 @@ only screen and (                min-resolution: 192dpi),
 only screen and (                min-resolution: 2dppx) {
     .list__item--quality {
         background-image: url(../../images/coffee-shape@2x.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
     }
 
     .list__item--benifits {
         background-image: url(../../images/gift@2x.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
     }
 
     .list__item--shipping {
         background-image: url(../../images/lurry@2x.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
     }
 }
 

@@ -108,6 +108,9 @@ only screen and (                min-resolution: 192dpi),
 only screen and (                min-resolution: 2dppx) {
     .collection__item--a::before {
         background-image: url(../../images/package1@2x.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
       
     }
 }
@@ -164,6 +167,12 @@ only screen and (                min-resolution: 2dppx) {
     .container {
         padding:0 24px 0 24px;
     }
+
+    .collections {
+        background-image: url(../../images/our-collection.png);
+        background-position: top;
+        
+    }
     .collection {
         flex-direction: column;
         padding-top: 40px;
@@ -186,6 +195,13 @@ only screen and (                min-resolution: 2dppx) {
     }
 }/* END OF MEDIA FOR 768PX MOBILE*/
 @media only screen and (max-width:375px) {
+
+    .collections {
+        background-image: url(../../images/our-collection.png);
+        background-position: top;
+    }
+
+
     .collection__item {
         flex-direction: column;
         text-align: center;
