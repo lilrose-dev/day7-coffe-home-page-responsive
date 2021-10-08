@@ -15,6 +15,7 @@
     padding-top: 60px;
     
     &__item {
+        max-width: 255px;
         margin: 0;
         margin-left: 30px;
         
@@ -74,12 +75,39 @@
     }
     
     &__text {
-        width: 255px;
         font-family: "Barlow";
         font-size: 16px;
         font-weight: 400;
         line-height: 26px;  
         color: var(--color-dark);
+    }
+}
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) {
+    .collections {
+        background-image: url(../../images/our-collection@2x.png);
+    }
+
+    .collection__item--a {
+        background-image: url(../../images/package1@2x.png);
+    }
+
+    .collection__item--b {
+        background-image: url(../../images/package2@2x.png);
+    }
+
+    .collection__item--c {
+        background-image: url(../../images/package3@2x.png);
+    }
+
+    .collection__item--d {
+        background-image: url(../../images/package4@2x.png);
     }
 }
 
@@ -108,7 +136,7 @@
             }
         }
     }
-}/* END OF MEDIA FOR 768PX TABLE*/
+}/* END OF MEDIA FOR 768PX MOBILE*/
 @media only screen and (max-width:375px) {
     .collection__item {
         flex-direction: column;

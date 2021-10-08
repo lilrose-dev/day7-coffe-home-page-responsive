@@ -98,6 +98,25 @@
         }
     }
 }
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) {
+    .list__item--quality {
+        background-image: url(../../images/coffee-shape@2x.png);
+    }
+
+    .list__item--benifits {
+        background-image: url(../../images/gift@2x.png);
+    }
+
+    .list__item--shipping {
+        background-image: url(../../images/lurry@2x.png);
+    }
+}
 
 /*MEDIA FOR 768PX TABLET*/
 @media only screen and (max-width:768px) {
@@ -157,6 +176,8 @@
     .choose-us {
         max-height: 902px;
         padding: 64px 24px 0 24px;
+        margin-bottom: 717px;
+        
         &__heading {
             font-size: 28px;
             line-height: 28px;

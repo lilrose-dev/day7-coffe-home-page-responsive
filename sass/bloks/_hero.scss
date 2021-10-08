@@ -31,37 +31,37 @@
     }
     
     button {
+        background-color: #0E8784;
+        border: 1px solid #0E8784;
+        color: #ffff;
+        border-radius: 6px;
         font-family: "Fraunces";
         font-size: 18px;
         font-weight: 900;
         line-height: 25px;
         text-align: center;
         padding: 15px 31px;
-        background-color: #0E8784;
-        border: 1px solid #0E8784;
-        color: #ffff;
-        border-radius: 6px;
-        
         &:hover {
             background-color: #66D2CF;
             border: 1px solid #66D2CF;
         }
+        
     }
     
 }
-
-/*hero for retina screen*/
-@media /* only for retina displays */
-only screen and (-webkit-min-device-pixel-ratio: 2),
-only screen and (min--moz-device-pixel-ratio: 2),
-only screen and (min-device-pixel-ratio: 2),
-only screen and (-webkit-min-device-pixel-ratio: 2),
-only screen and (min-resolution: 192dpi),
-only screen and (min-resolution: 2dppx) {
+   
+   @media
+   only screen and (-webkit-min-device-pixel-ratio: 2),
+   only screen and (   min--moz-device-pixel-ratio: 2),
+   only screen and (     -o-min-device-pixel-ratio: 2/1),
+   only screen and (        min-device-pixel-ratio: 2),
+   only screen and (                min-resolution: 192dpi),
+   only screen and (                min-resolution: 2dppx) {
     .hero {
         background-image: url("../../images/hero-bg-img@2x.png");
-    }   
-}
+    }  
+   }
+
 
 
 //TABLE MEDIA
@@ -94,6 +94,8 @@ only screen and (min-resolution: 2dppx) {
             margin-bottom: 40px;
         }
     }
+}   ///end of 768 TABLET media
+ 
     
     @media
     only screen and (-webkit-min-device-pixel-ratio: 2),
@@ -106,9 +108,8 @@ only screen and (min-resolution: 2dppx) {
             background-image:url(../../images/table-hero-img@2x.png)
         }
     }
-}   ///end of 768 TABLET media
-
-//MOBILE 375PX MEDIA
+    
+    //MOBILE 375PX MEDIA
 @media only screen and (max-width:375px) {
     .container {
         padding-left: 24px;
@@ -118,23 +119,35 @@ only screen and (min-resolution: 2dppx) {
     .hero {
         padding: 100px 24px;
         background-image: url(../..//images/Bitmap.png);
-
+        
         &__box {
             min-width: 279px;
             text-align: center;
         }
-
+        
         &__heading {
             font-size: 40px;
             line-height: 40px;
             margin-bottom: 24px;
         }
-
+        
         &__text {
             font-style: 15px;
             line-height: 25px;
             margin-bottom: 39px;
         }
+    }
+}
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) {
+    .hero {
+        background-image: url(../../images/Bitmap@2x.png);
     }
 }
 
