@@ -138,7 +138,7 @@ p {
     top: 100%;
     left: 0;
     right: 0;
-    height: 70vh;
+    height: 80vh;
     background-image: -webkit-gradient(linear, left top, left bottom, from(white), to(rgba(255, 255, 255, 0.8)));
     background-image: linear-gradient(to bottom, white, rgba(255, 255, 255, 0.8));
     -webkit-box-orient: vertical;
@@ -220,20 +220,17 @@ p {
   border: 1px solid #0E8784;
   color: #ffff;
   border-radius: 6px;
-}
-
-.hero button:hover {
-  background-color: #66D2CF;
-  border: 1px solid #66D2CF;
-}
-
-.hero__link {
   font-family: "Fraunces";
   font-size: 18px;
   font-weight: 900;
   line-height: 25px;
   text-align: center;
   padding: 15px 31px;
+}
+
+.hero button:hover {
+  background-color: #66D2CF;
+  border: 1px solid #66D2CF;
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
