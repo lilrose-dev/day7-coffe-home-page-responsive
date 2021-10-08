@@ -105,7 +105,7 @@ only screen and (     -o-min-device-pixel-ratio: 2/1),
 only screen and (        min-device-pixel-ratio: 2),
 only screen and (                min-resolution: 192dpi),
 only screen and (                min-resolution: 2dppx) {
-    .list__item--quality {
+    .list__item--quality::before {
         background-image: url(../../images/coffee-shape@2x.png);
         background-repeat: no-repeat;
         background-size: contain;
@@ -120,7 +120,7 @@ only screen and (                min-resolution: 2dppx) {
     only screen and (        min-device-pixel-ratio: 2),
     only screen and (                min-resolution: 192dpi),
     only screen and (                min-resolution: 2dppx) {
-    .list__item--benifits {
+    .list__item--benifits::before {
         background-image: url(../../images/gift@2x.png);
         background-repeat: no-repeat;
         background-size: contain;
@@ -135,7 +135,7 @@ only screen and (     -o-min-device-pixel-ratio: 2/1),
 only screen and (        min-device-pixel-ratio: 2),
 only screen and (                min-resolution: 192dpi),
 only screen and (                min-resolution: 2dppx) {
-    .list__item--shipping {
+    .list__item--shipping::before {
         background-image: url(../../images/lurry@2x.png);
         background-repeat: no-repeat;
         background-size: contain;
