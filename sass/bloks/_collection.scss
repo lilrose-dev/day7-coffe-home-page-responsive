@@ -92,22 +92,70 @@ only screen and (                min-resolution: 192dpi),
 only screen and (                min-resolution: 2dppx) {
     .collections {
         background-image: url(../../images/our-collection@2x.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
     }
+}
 
-    .collection__item--a {
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) {
+    .collection__item--a::before {
         background-image: url(../../images/package1@2x.png);
+      
     }
+}
 
-    .collection__item--b {
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) {
+    .collection__item--b::before {
         background-image: url(../../images/package2@2x.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
     }
+}
 
-    .collection__item--c {
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) {
+    .collection__item--c::before {
         background-image: url(../../images/package3@2x.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
     }
+}
 
-    .collection__item--d {
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) {
+    .collection__item--d::before {
         background-image: url(../../images/package4@2x.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
     }
 }
 
